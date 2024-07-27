@@ -1,11 +1,19 @@
-/* Using the Welcome component */
-const Homepage = () => {
+// TASKLIST COMPONENT (CHILD)
+import React from "react";
+import TaskItem from "./TaskItem"; // import sub-child component
+
+const TaskList = ({ tasks, onCompleteTask }) => {
   return (
-    <div>
-      <Welcome name="Alice" />
-      <Welcome name="Bob" />
-    </div>
+    <ul>
+      {tasks.map((task) => (
+        <TaskItem
+          key={task.id}
+          task={task}
+          onComplete={() => onCompleteTask(task.id)}
+        />
+      ))}
+    </ul>
   );
 };
 
-export default Homepage;
+export default TaskList;
