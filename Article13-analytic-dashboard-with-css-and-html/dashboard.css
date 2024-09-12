@@ -7,7 +7,7 @@
 /* sidebar styling */
 .dashboardContainer__sidebar {
   flex-basis: 2%; /* Takes up 5% of the container's width */
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
 }
 
@@ -20,7 +20,7 @@
 
 .dashboardContainer__sidebar li {
   margin-bottom: 1rem;
-  color: #000;
+  color: rgb(0, 0, 0);
   padding: 0.5rem 3rem 0.5rem 1rem;
   border-radius: 0.5rem;
 }
@@ -30,7 +30,7 @@
 }
 
 .dashboardContainer__sidebar li:first-child a {
-  color: #1b59f8;
+  color: rgb(27, 89, 248);
 }
 
 .dashboardContainer__sidebar li a {
@@ -60,5 +60,40 @@
 .dashboardContainer__mainContent__header button {
   display: flex;
   align-items: center;
-  /* text-align: center; */
+}
+
+/* First Section: Dropdown Filters  */
+.dashboardContainer__mainContent__sectionA {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboardContainer__mainContent__sectionA .custom-select {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: .4rem .8rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin-left: .4rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.188);
+}
+
+.dashboardContainer__mainContent__sectionA .custom-select label span{
+  font-weight: bold;
+}
+
+.dashboardContainer__mainContent__sectionA .custom-select select {
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+
+}
+
+.dashboardContainer__mainContent__sectionA .custom-select select:focus,
+.dashboardContainer__mainContent__sectionA .custom-select select:hover {
+  outline: none; /* Remove default focus outline */
 }
