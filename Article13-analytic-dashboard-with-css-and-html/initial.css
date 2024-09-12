@@ -1,0 +1,96 @@
+/* Universal selector: Removes default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Sets default font and line height for better readability */
+body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+    Ubuntu, "Open Sans", "Helvetica Neue", sans-serif; 
+  line-height: 1.6; 
+  background-color: #f9f9f9;
+  color: #000; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Sets a base container for centering and adding structure to the layout */
+.container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+/* Default heading styles: adjust spacing */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Default paragraph style */
+p {
+  margin-bottom: 15px; /* Adds space between paragraphs */
+}
+
+/* Link styles */
+a {
+  text-decoration: none; /* Removes underline by default */
+}
+
+a:hover {
+  text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+/* Simple button styling */
+button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight: 900;
+}
+
+/* Image styling */
+img {
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto;
+  display: block;
+}
+
+/* Lists: removes default bullets and adds spacing */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Flexbox utility class: easily apply flex layout */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive media queries: for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; 
+  }
+}
