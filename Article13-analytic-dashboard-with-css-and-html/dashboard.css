@@ -1,0 +1,48 @@
+/* Let's start syling😍 */
+
+.dashboardContainer {
+  display: flex;
+  gap: 5%;
+  padding: 2rem 1rem;
+}
+
+/* sidebar styling */
+.dashboardContainer__sidebar {
+  flex-basis: 5%;  /* Takes up 5% of the container's width */
+}
+
+.dashboardContainer__sidebar h2 {
+  color: rgb(255, 115, 0);
+  text-align: center;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboardContainer__sidebar li {
+  margin-bottom: 1rem;
+  color: #000;
+  padding: .5rem 3rem .5rem 1rem;
+  border-radius: .5rem;
+}
+
+.dashboardContainer__sidebar li:first-child {
+background-color: rgba(27, 90, 248, 0.10);
+}
+
+.dashboardContainer__sidebar li:first-child a {
+color: #1B59F8;
+}
+
+.dashboardContainer__sidebar li a {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.dashboardContainer__sidebar h3 {
+  padding-left: 1rem;
+}
+
+.dashboardContainer__mainContent {
+  flex-basis: 95%;  /* Takes up 95% of the container's width */
+}
