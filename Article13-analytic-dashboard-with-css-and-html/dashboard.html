@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div>
+  <div class="dashboardContainer">
     <!-- Sidebar Section -->
-    <aside>
+    <aside class="dashboardContainer__sidebar">
       <h3>V.I.P</h3>
       <nav aria-label="Primary Navigation">
         <ul>
@@ -44,10 +44,10 @@
     </aside>
 
     <!-- Main Content Section -->
-    <main role="main">
+    <main role="main" class="dashboardContainer__mainContent">
 
       <!-- Header Section -->
-      <header>
+      <header class="dashboardContainer__mainContent__header">
         <h4>Reports</h4>
         <button aria-label="Download Report">
           <span aria-hidden="true">♥♥</span>Download
@@ -55,7 +55,7 @@
       </header>
 
       <!-- First Section: Dropdown Filters -->
-      <section>
+      <section class="dashboardContainer__mainContent__sectionA">
         <div>
           <div class="custom-select">
             <label for="Timeframe">Topic:</label>
@@ -79,8 +79,8 @@
       </section>
 
       <!-- Second Section: Performance Metrics -->
-      <section>
-        <div>
+      <section class="dashboardContainer__mainContent__sectionB">
+        <div class="dashboardContainer__mainContent__sectionB__left">
           <div>
             <div>
               <p>Active Users</p><strong>27 <span>/80</span></strong>
@@ -130,7 +130,7 @@
         </div>
 
         <!--  -->
-        <div>
+        <div class="dashboardContainer__mainContent__sectionB__right">
           <div>
             <p>Activity</p>
             <select id="Month">
@@ -238,8 +238,8 @@
       </section>
 
       <!-- Third Section: Topics info -->
-      <section>
-        <div>
+      <section class="dashboardContainer__mainContent__sectionC">
+        <div class="dashboardContainer__mainContent__sectionC__left">
           <p>Weakest Topic</p>
           <div>
             <img src="./img/section-c/image1.png" alt="food image">
@@ -280,7 +280,7 @@
         </div>
 
         <!--  -->
-        <div>
+        <div class="dashboardContainer__mainContent__sectionC__right">
           <p>Stongest Topic</p>
           <div>
             <img src="./img/section-c/image4.png" alt="food image">
@@ -322,8 +322,8 @@
       </section>
 
       <!-- Fourth Section: User & Group Leaderboard -->
-      <section>
-        <div>
+      <section class="dashboardContainer__mainContent__sectionD">
+        <div class="dashboardContainer__mainContent__sectionD__left">
           <p>User Leaderboard</p>
           <aside>
             <div>
@@ -352,7 +352,7 @@
         </div>
 
         <!--   -->
-        <div>
+        <div class="dashboardContainer__mainContent__sectionD__right">
           <p>Groups Leaderboard</p>
           <aside>
             <div>
