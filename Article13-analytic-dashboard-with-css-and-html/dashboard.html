@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,377 @@
   <link rel="stylesheet" href="dashboard.css">
   <title>Analytic Dashboard With HTML and CSS</title>
 </head>
+
 <body>
- 
+  <div>
+    <!-- Sidebar Section -->
+    <aside>
+      <h3>V.I.P</h3>
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li><a href="#reports">
+              <span♥</span> Reports
+            </a></li>
+          <li><a href="#library">
+              <span♥</span> Library
+            </a></li>
+          <li><a href="#people">
+              <span♥</span> People
+            </a></li>
+          <li><a href="#activities">
+              <span♥</span> Activities
+            </a></li>
+        </ul>
+      </nav>
+      <h3>Support</h3>
+      <nav aria-label="Support Navigation">
+        <ul>
+          <li><a href="#getstarted">
+              <span♥</span> Get Started
+            </a></li>
+          <li><a href="#settings">
+              <span♥</span> Settings
+            </a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Section -->
+    <main role="main">
+
+      <!-- Header Section -->
+      <header>
+        <h4>Reports</h4>
+        <button aria-label="Download Report">
+          <span aria-hidden="true">♥♥</span>Download
+        </button>
+      </header>
+
+      <!-- First Section: Dropdown Filters -->
+      <section>
+        <div>
+          <div class="custom-select">
+            <label for="Timeframe">Topic:</label>
+            <select id="Timeframe">
+              <option value="All-time">All-time</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <label for="People">People: </label>
+            <select id="People">
+              <option value="All">All</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <label for="Topic">Topic: </label>
+            <select id="Topic">
+              <option value="All">All</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Section: Performance Metrics -->
+      <section>
+        <div>
+          <div>
+            <div>
+              <p>Active Users</p><strong>27 <span>/80</span></strong>
+            </div>
+            <div>
+              <p>Questions Answered <strong>3,298</strong></p>
+            </div>
+            <div>Av. Session Length <strong>2m 34s</strong></div>
+          </div>
+          <div>
+            <div>
+              <p>
+                Starting Knowledge <svg width="11" height="12" aria-label="Knowledge icon" viewBox="0 0 11 12"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.85136 4.71371C5.50038 4.71371 5.21637 4.99749 5.21637 5.3487V8.52362C5.21637 8.87483 5.50038 9.1586 5.85136 9.1586C6.20233 9.1586 6.48634 8.87483 6.48634 8.52362V5.3487C6.48634 4.99749 6.20233 4.71371 5.85136 4.71371Z"
+                    fill="#6B6C7E" />
+                  <path
+                    d="M6.48634 3.44374C6.48634 3.79441 6.20233 4.07873 5.85136 4.07873C5.50038 4.07873 5.21637 3.79441 5.21637 3.44374C5.21637 3.09308 5.50038 2.80876 5.85136 2.80876C6.20233 2.80876 6.48634 3.09308 6.48634 3.44374Z"
+                    fill="#6B6C7E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.85136 0.903809C7.20876 0.903809 8.48431 1.43167 9.44298 2.39205C10.4035 3.3505 10.9312 4.62643 10.9312 5.98368C10.9312 7.34093 10.4035 8.61493 9.44298 9.57531C8.48431 10.5357 7.20876 11.0636 5.85136 11.0636C4.49395 11.0636 3.22027 10.5357 2.25973 9.57531C1.29919 8.61686 0.771484 7.34093 0.771484 5.98368C0.771484 4.62643 1.29919 3.3505 2.25973 2.39205C3.2184 1.43167 4.49395 0.903809 5.85136 0.903809ZM2.04145 5.98368C2.04145 8.08505 3.74983 9.79358 5.85136 9.79358C7.95288 9.79358 9.66126 8.08505 9.66126 5.98368C9.66126 3.88231 7.95288 2.17378 5.85136 2.17378C3.74983 2.17378 2.04145 3.88231 2.04145 5.98368Z"
+                    fill="#6B6C7E" />
+                </svg>
+              </p>
+              <strong>64%</strong>
+              <figure>
+                <img src="./img/section-c/image1.png" alt="Graph showing food safety performance">
+                <img src="./img/graph1b.png" alt="graph1a">
+              </figure>
+            </div>
+            <div>
+              <p>Current Knowledge</p><strong>86%</strong>
+              <figure>
+                <img src="./img/graph2a.png" alt="Graph showing current knowledge">
+                <img src="./img/graph2b.png" alt="graph2b">
+              </figure>
+            </div>
+            <div>
+              <p>Knowledge Gain</p><strong>+34%</strong>
+              <figure>
+                <img src="./img/graph3a.png" alt="Graph showing knowledge gain ">
+                <img src="./img/graph3b.png" alt="graph3b">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div>
+          <div>
+            <p>Activity</p>
+            <select id="Month">
+              <option value="Month">Month</option>
+            </select>
+          </div>
+          <div>
+            <div class="chart-container">
+              <div class="y-axis">
+                <div>400</div>
+                <div>300</div>
+                <div>200</div>
+                <div>100</div>
+                <div>0</div>
+              </div>
+
+              <div class="bars-container">
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%;"></div>
+                  </div>
+                  <div class="month-label">Jan</div>
+                </div>
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 37.5%;"></div>
+                  </div>
+                  <div class="month-label">Feb</div>
+                </div>
+                <div class="bars-container">
+                  <div class="bar-group">
+                    <div class="progress-container" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 37.5%;"></div>
+                    </div>
+                    <div class="month-label">Mar</div>
+                  </div>
+
+                  <div class="bar-group">
+                    <div class="progress-container" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 62.5%;"></div>
+                    </div>
+                    <div class="month-label">April</div>
+                  </div>
+                  <div class="bars-container">
+                    <div class="bar-group">
+                      <div class="progress-container" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                      </div>
+                      <div class="month-label">May</div>
+                    </div>
+
+                    <div class="bar-group">
+                      <div class="progress-container" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                      </div>
+                      <div class="month-label">Jun</div>
+                    </div>
+                    <div class="bars-container">
+                      <div class="bar-group">
+                        <div class="progress-container" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 62.5%;"></div>
+                        </div>
+                        <div class="month-label">Jul</div>
+                      </div>
+
+                      <div class="bar-group">
+                        <div class="progress-container" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 25%;"></div>
+                        </div>
+                        <div class="month-label">Aug</div>
+                      </div>
+                      <div class="bars-container">
+                        <div class="bar-group">
+                          <div class="progress-container" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                          </div>
+                          <div class="month-label">Sep</div>
+                        </div>
+
+                        <div class="bar-group">
+                          <div class="progress-container" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 87.5%;"></div>
+                          </div>
+                          <div class="month-label">Oct</div>
+                        </div>
+                        <div class="bars-container">
+                          <div class="bar-group">
+                            <div class="progress-container" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 40%;"></div>
+                            </div>
+                            <div class="month-label">Nov</div>
+                          </div>
+
+                          <div class="bar-group">
+                            <div class="progress-container" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 95%;"></div>
+                            </div>
+                            <div class="month-label">Dec</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      </section>
+
+      <!-- Third Section: Topics info -->
+      <section>
+        <div>
+          <p>Weakest Topic</p>
+          <div>
+            <img src="./img/section-c/image1.png" alt="food image">
+            <div>
+              <h4>Food Safety</h4>
+              <div>
+                <div class="progress-container" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 74%;"></div>
+                </div>
+                <p>74% <span>correct</span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./img/section-c/image2.png" alt="Compliant image">
+            <div>
+              <h4>Compliant Basics Procedure</h4>
+              <div>
+                <div class="progress-container" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 52%;"></div>
+                </div>
+                <p>52% <span>correct</span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./img/section-c/image3.png" alt="Networking image">
+            <div>
+              <h4>Company Networking</h4>
+              <div>
+                <div class="progress-container" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 36%;"></div>
+                </div>
+                <p>36% <span>correct</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div>
+          <p>Stongest Topic</p>
+          <div>
+            <img src="./img/section-c/image4.png" alt="food image">
+            <div>
+              <h4>Covid Protocols </h4>
+              <div>
+                <div class="progress-container" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 95%;"></div>
+                </div>
+                <p>95% <span>correct</span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./img/section-c/image5.png" alt="Compliant image">
+            <div>
+              <h4>Cyber Security Basics </h4>
+              <div>
+                <div class="progress-container" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 92%;"></div>
+                </div>
+                <p>92% <span>correct</span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./img/section-c/image6.png" alt="Networking image">
+            <div>
+              <h4>Social Media Policies</h4>
+              <div>
+                <div class="progress-container" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 89%;"></div>
+                </div>
+                <p>89% <span>correct</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fourth Section: User & Group Leaderboard -->
+      <section>
+        <div>
+          <p>User Leaderboard</p>
+          <aside>
+            <div>
+              <img src="./img/section-d/image1.png" alt="Jesse">
+              <div>
+                <h4>Jesse Thomas</h4>
+                <p>637 Points - 98% Correct</p>
+              </div>
+              <div>
+                <p>1</p>
+                <img src="./img/section-d/image1b.png" alt="Increment">
+              </div>
+            </div>
+            <div>
+              <img src="./img/section-d/image2.png" alt="Jesse">
+              <div>
+                <h4>Thisal Mathiyazhagan</h4>
+                <p>637 Points - 89% Correct </p>
+              </div>
+              <div>
+                <p>2</p>
+                <img src="./img/section-d/image2b.png" alt="Decrement">
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!--   -->
+        <div>
+          <p>Groups Leaderboard</p>
+          <aside>
+            <div>
+              <div>
+                <h4>Houston Facility</h4>
+                <p>52 Points / User - 97% Correct</p>
+              </div>
+              <div>
+                <p>1</p>
+                <img src="./img/section-d/image1b.png" alt="Increment">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>Test Group</h4>
+                <p>52 Points / User - 95% Correct</p>
+              </div>
+              <div>
+                <p>2</p>
+                <img src="./img/section-d/image2b.png" alt="Decrement">
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
 </body>
+
 </html>
