@@ -77,16 +77,21 @@
       <!-- Second Section: Performance Metrics -->
       <section class="dashboardContainer__mainContent__sectionB">
         <div class="dashboardContainer__mainContent__sectionB__left">
-          <div>
+          <div class="dashboardContainer__mainContent__sectionB__left__top">
             <div>
-              <p>Active Users</p><strong>27 <span>/80</span></strong>
+              <p>Active Users</p>
+              <strong>27 <span>/80</span></strong>
             </div>
             <div>
-              <p>Questions Answered <strong>3,298</strong></p>
+              <p>Questions Answered</p>
+              <strong>3,298</strong>
             </div>
-            <div>Av. Session Length <strong>2m 34s</strong></div>
+            <div>
+              <p> Av. Session Length </p>
+              <strong>2m 34s</strong>
+            </div>
           </div>
-          <div>
+          <div class="dashboardContainer__mainContent__sectionB__left__bottom">
             <div>
               <p>
                 Starting Knowledge <svg width="11" height="12" aria-label="Knowledge icon" viewBox="0 0 11 12"
@@ -127,13 +132,13 @@
 
         <!--  -->
         <div class="dashboardContainer__mainContent__sectionB__right">
-          <div>
+          <div class="dashboardContainer__mainContent__sectionB__right__top">
             <p>Activity</p>
             <select id="Month">
               <option value="Month">Month</option>
             </select>
           </div>
-          <div>
+          <div class="dashboardContainer__mainContent__sectionB__right__bottom">
             <div class="chart-container">
               <div class="y-axis">
                 <div>400</div>
@@ -146,235 +151,238 @@
               <div class="bars-container">
                 <div class="bar-group">
                   <div class="progress-container" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 25%;"></div>
+                    <div class="progress-bar" style="height: 25%;"></div>
                   </div>
                   <div class="month-label">Jan</div>
                 </div>
 
                 <div class="bar-group">
                   <div class="progress-container" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 37.5%;"></div>
+                    <div class="progress-bar" style="height: 37.5%;"></div>
                   </div>
                   <div class="month-label">Feb</div>
                 </div>
-                <div class="bars-container">
-                  <div class="bar-group">
-                    <div class="progress-container" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar" style="width: 37.5%;"></div>
-                    </div>
-                    <div class="month-label">Mar</div>
+
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 37.5%;"></div>
                   </div>
+                  <div class="month-label">Mar</div>
+                </div>
 
-                  <div class="bar-group">
-                    <div class="progress-container" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar" style="width: 62.5%;"></div>
-                    </div>
-                    <div class="month-label">April</div>
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 62.5%;"></div>
                   </div>
-                  <div class="bars-container">
-                    <div class="bar-group">
-                      <div class="progress-container" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                      </div>
-                      <div class="month-label">May</div>
-                    </div>
+                  <div class="month-label">April</div>
+                </div>
 
-                    <div class="bar-group">
-                      <div class="progress-container" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 50%;"></div>
-                      </div>
-                      <div class="month-label">Jun</div>
-                    </div>
-                    <div class="bars-container">
-                      <div class="bar-group">
-                        <div class="progress-container" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progress-bar" style="width: 62.5%;"></div>
-                        </div>
-                        <div class="month-label">Jul</div>
-                      </div>
 
-                      <div class="bar-group">
-                        <div class="progress-container" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progress-bar" style="width: 25%;"></div>
-                        </div>
-                        <div class="month-label">Aug</div>
-                      </div>
-                      <div class="bars-container">
-                        <div class="bar-group">
-                          <div class="progress-container" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 70%;"></div>
-                          </div>
-                          <div class="month-label">Sep</div>
-                        </div>
-
-                        <div class="bar-group">
-                          <div class="progress-container" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 87.5%;"></div>
-                          </div>
-                          <div class="month-label">Oct</div>
-                        </div>
-                        <div class="bars-container">
-                          <div class="bar-group">
-                            <div class="progress-container" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                              <div class="progress-bar" style="width: 40%;"></div>
-                            </div>
-                            <div class="month-label">Nov</div>
-                          </div>
-
-                          <div class="bar-group">
-                            <div class="progress-container" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                              <div class="progress-bar" style="width: 95%;"></div>
-                            </div>
-                            <div class="month-label">Dec</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 70%;"></div>
                   </div>
-      </section>
+                  <div class="month-label">May</div>
+                </div>
 
-      <!-- Third Section: Topics info -->
-      <section class="dashboardContainer__mainContent__sectionC">
-        <div class="dashboardContainer__mainContent__sectionC__left">
-          <p>Weakest Topic</p>
-          <div>
-            <img src="./img/section-c/image1.png" alt="food image">
-            <div>
-              <h4>Food Safety</h4>
-              <div>
-                <div class="progress-container" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 74%;"></div>
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 50%;"></div>
+                  </div>
+                  <div class="month-label">Jun</div>
                 </div>
-                <p>74% <span>correct</span></p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img src="./img/section-c/image2.png" alt="Compliant image">
-            <div>
-              <h4>Compliant Basics Procedure</h4>
-              <div>
-                <div class="progress-container" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 52%;"></div>
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 62.5%;"></div>
+                  </div>
+                  <div class="month-label">Jul</div>
                 </div>
-                <p>52% <span>correct</span></p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img src="./img/section-c/image3.png" alt="Networking image">
-            <div>
-              <h4>Company Networking</h4>
-              <div>
-                <div class="progress-container" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 36%;"></div>
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 25%;"></div>
+                  </div>
+                  <div class="month-label">Aug</div>
                 </div>
-                <p>36% <span>correct</span></p>
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 70%;"></div>
+                  </div>
+                  <div class="month-label">Sep</div>
+                </div>
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 87.5%;"></div>
+                  </div>
+                  <div class="month-label">Oct</div>
+                </div>
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 40%;"></div>
+                  </div>
+                  <div class="month-label">Nov</div>
+                </div>
+
+                <div class="bar-group">
+                  <div class="progress-container" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="height: 95%;"></div>
+                  </div>
+                  <div class="month-label">Dec</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+  </div>
+  </section>
 
-        <!--  -->
-        <div class="dashboardContainer__mainContent__sectionC__right">
-          <p>Stongest Topic</p>
+  <!-- Third Section: Topics info -->
+  <section class="dashboardContainer__mainContent__sectionC">
+    <div class="dashboardContainer__mainContent__sectionC__left">
+      <p>Weakest Topic</p>
+      <div>
+        <img src="./img/section-c/image1.png" alt="food image">
+        <div>
+          <h4>Food Safety</h4>
           <div>
-            <img src="./img/section-c/image4.png" alt="food image">
-            <div>
-              <h4>Covid Protocols </h4>
-              <div>
-                <div class="progress-container" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 95%;"></div>
-                </div>
-                <p>95% <span>correct</span></p>
-              </div>
+            <div class="progress-container" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 74%;"></div>
             </div>
-          </div>
-          <div>
-            <img src="./img/section-c/image5.png" alt="Compliant image">
-            <div>
-              <h4>Cyber Security Basics </h4>
-              <div>
-                <div class="progress-container" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 92%;"></div>
-                </div>
-                <p>92% <span>correct</span></p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img src="./img/section-c/image6.png" alt="Networking image">
-            <div>
-              <h4>Social Media Policies</h4>
-              <div>
-                <div class="progress-container" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 89%;"></div>
-                </div>
-                <p>89% <span>correct</span></p>
-              </div>
-            </div>
+            <p>74% <span>correct</span></p>
           </div>
         </div>
-      </section>
-
-      <!-- Fourth Section: User & Group Leaderboard -->
-      <section class="dashboardContainer__mainContent__sectionD">
-        <div class="dashboardContainer__mainContent__sectionD__left">
-          <p>User Leaderboard</p>
-          <aside>
-            <div>
-              <img src="./img/section-d/image1.png" alt="Jesse">
-              <div>
-                <h4>Jesse Thomas</h4>
-                <p>637 Points - 98% Correct</p>
-              </div>
-              <div>
-                <p>1</p>
-                <img src="./img/section-d/image1b.png" alt="Increment">
-              </div>
+      </div>
+      <div>
+        <img src="./img/section-c/image2.png" alt="Compliant image">
+        <div>
+          <h4>Compliant Basics Procedure</h4>
+          <div>
+            <div class="progress-container" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 52%;"></div>
             </div>
-            <div>
-              <img src="./img/section-d/image2.png" alt="Jesse">
-              <div>
-                <h4>Thisal Mathiyazhagan</h4>
-                <p>637 Points - 89% Correct </p>
-              </div>
-              <div>
-                <p>2</p>
-                <img src="./img/section-d/image2b.png" alt="Decrement">
-              </div>
-            </div>
-          </aside>
+            <p>52% <span>correct</span></p>
+          </div>
         </div>
-
-        <!--   -->
-        <div class="dashboardContainer__mainContent__sectionD__right">
-          <p>Groups Leaderboard</p>
-          <aside>
-            <div>
-              <div>
-                <h4>Houston Facility</h4>
-                <p>52 Points / User - 97% Correct</p>
-              </div>
-              <div>
-                <p>1</p>
-                <img src="./img/section-d/image1b.png" alt="Increment">
-              </div>
+      </div>
+      <div>
+        <img src="./img/section-c/image3.png" alt="Networking image">
+        <div>
+          <h4>Company Networking</h4>
+          <div>
+            <div class="progress-container" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 36%;"></div>
             </div>
-            <div>
-              <div>
-                <h4>Test Group</h4>
-                <p>52 Points / User - 95% Correct</p>
-              </div>
-              <div>
-                <p>2</p>
-                <img src="./img/section-d/image2b.png" alt="Decrement">
-              </div>
-            </div>
-          </aside>
+            <p>36% <span>correct</span></p>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="dashboardContainer__mainContent__sectionC__right">
+      <p>Stongest Topic</p>
+      <div>
+        <img src="./img/section-c/image4.png" alt="food image">
+        <div>
+          <h4>Covid Protocols </h4>
+          <div>
+            <div class="progress-container" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 95%;"></div>
+            </div>
+            <p>95% <span>correct</span></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./img/section-c/image5.png" alt="Compliant image">
+        <div>
+          <h4>Cyber Security Basics </h4>
+          <div>
+            <div class="progress-container" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 92%;"></div>
+            </div>
+            <p>92% <span>correct</span></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./img/section-c/image6.png" alt="Networking image">
+        <div>
+          <h4>Social Media Policies</h4>
+          <div>
+            <div class="progress-container" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 89%;"></div>
+            </div>
+            <p>89% <span>correct</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fourth Section: User & Group Leaderboard -->
+  <section class="dashboardContainer__mainContent__sectionD">
+    <div class="dashboardContainer__mainContent__sectionD__left">
+      <p>User Leaderboard</p>
+      <aside>
+        <div>
+          <img src="./img/section-d/image1.png" alt="Jesse">
+          <div>
+            <h4>Jesse Thomas</h4>
+            <p>637 Points - 98% Correct</p>
+          </div>
+          <div>
+            <p>1</p>
+            <img src="./img/section-d/image1b.png" alt="Increment">
+          </div>
+        </div>
+        <div>
+          <img src="./img/section-d/image2.png" alt="Jesse">
+          <div>
+            <h4>Thisal Mathiyazhagan</h4>
+            <p>637 Points - 89% Correct </p>
+          </div>
+          <div>
+            <p>2</p>
+            <img src="./img/section-d/image2b.png" alt="Decrement">
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!--   -->
+    <div class="dashboardContainer__mainContent__sectionD__right">
+      <p>Groups Leaderboard</p>
+      <aside>
+        <div>
+          <div>
+            <h4>Houston Facility</h4>
+            <p>52 Points / User - 97% Correct</p>
+          </div>
+          <div>
+            <p>1</p>
+            <img src="./img/section-d/image1b.png" alt="Increment">
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>Test Group</h4>
+            <p>52 Points / User - 95% Correct</p>
+          </div>
+          <div>
+            <p>2</p>
+            <img src="./img/section-d/image2b.png" alt="Decrement">
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  </main>
 </body>
 
 </html>
