@@ -133,6 +133,11 @@
   height: 9rem;
 }
 
+.dashboardContainer__mainContent__sectionB__left__top div p,
+.dashboardContainer__mainContent__sectionB__left__bottom div p {
+  white-space: nowrap;
+}
+
 .dashboardContainer__mainContent__sectionB__left__bottom {
   margin-top: 1.5rem;
 }
@@ -148,7 +153,7 @@
   width: 8rem;
 }
 
-.dashboardContainer__mainContent__sectionB__left__bottom div img:last-child{
+.dashboardContainer__mainContent__sectionB__left__bottom div img:last-child {
   margin-top: -1.2rem;
 }
 
@@ -163,7 +168,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
   border-bottom: 1px solid rgb(228, 229, 231, 0.4);
 }
 
@@ -186,7 +191,6 @@
   align-items: flex-end;
   margin-right: 10px;
   height: 200px;
-
 }
 
 .dashboardContainer__mainContent__sectionB__right__bottom .y-axis div {
@@ -204,13 +208,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
 }
 
 .dashboardContainer__mainContent__sectionB__right__bottom .progress-container {
-  width: .8rem;  /* You can adjust the width of the bar */
-  height: 200px;  /* Height of the progress bars */
-  background-color: #F2F7FF;
+  width: 0.8rem; /* You can adjust the width of the bar */
+  height: 200px; /* Height of the progress bars */
+  background-color: #f2f7ff;
   border-radius: 25px;
   position: relative;
   margin-bottom: 10px;
@@ -219,7 +223,7 @@
 }
 
 .dashboardContainer__mainContent__sectionB__right__bottom .progress-bar {
-  background-color: #1B59F8;
+  background-color: #1b59f8;
   width: 100%;
   border-radius: 25px;
   transition: height 0.3s ease-in-out;
@@ -231,3 +235,84 @@
   text-align: center;
 }
 
+/* Third Section: Performance Metrics */
+.dashboardContainer__mainContent__sectionC {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 3%;
+  justify-content: space-between;
+}
+
+.dashboardContainer__mainContent__sectionC__left,
+.dashboardContainer__mainContent__sectionC__right {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.dashboardContainer__mainContent__sectionC__left h6,
+.dashboardContainer__mainContent__sectionC__right h6 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dashboardContainer__mainContent__sectionC__left__content,
+.dashboardContainer__mainContent__sectionC__left__content aside div,
+.dashboardContainer__mainContent__sectionC__right__content,
+.dashboardContainer__mainContent__sectionC__right__content aside div {
+  display: flex;
+  gap: 3%;
+}
+
+.dashboardContainer__mainContent__sectionC__left__content img,
+.dashboardContainer__mainContent__sectionC__right__content img {
+width: 3rem;
+height: 2rem;
+}
+
+.dashboardContainer__mainContent__sectionC__left__content aside h4,
+.dashboardContainer__mainContent__sectionC__right__content aside h4 {
+  margin-bottom: -1.4rem;
+}
+
+.dashboardContainer__mainContent__sectionC__left__content aside div,
+.dashboardContainer__mainContent__sectionC__right__content aside div {
+  justify-content: space-between;
+  align-items: center;
+  width: 22rem;
+  display: flex;
+}
+
+.dashboardContainer__mainContent__sectionC__left__content aside div h5,
+.dashboardContainer__mainContent__sectionC__right__content aside div h5 {
+  white-space: nowrap;
+}
+
+.dashboardContainer__mainContent__sectionC__left__content aside div h5 span,
+.dashboardContainer__mainContent__sectionC__right__content aside div h5 span {
+ color: rgba(0, 0, 0, 0.3);
+}
+
+.dashboardContainer__mainContent__sectionC__left .progress-container,
+.dashboardContainer__mainContent__sectionC__right .progress-container {
+  width: 100%;
+  max-width: 600px;
+  background: hsla(340, 100%, 63%, 0.2);
+  border-radius: 25px;
+  margin: 20px 0;
+}
+
+.dashboardContainer__mainContent__sectionC__left .progress-bar,
+.dashboardContainer__mainContent__sectionC__right .progress-bar {
+  height: 0.7rem;
+  line-height: 25px;
+  background: linear-gradient(90deg, #ffbf1a 0%, #ff4080 100%);
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  transition: width 0.3s ease-in-out;
+}
