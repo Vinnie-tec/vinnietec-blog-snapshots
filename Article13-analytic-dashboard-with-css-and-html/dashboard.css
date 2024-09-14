@@ -316,3 +316,70 @@ height: 2rem;
   border-radius: 25px;
   transition: width 0.3s ease-in-out;
 }
+
+/* Fourth Section: Performance Metrics */
+.dashboardContainer__mainContent__sectionD {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 3%;
+  justify-content: space-between;
+}
+
+.dashboardContainer__mainContent__sectionD__left,
+.dashboardContainer__mainContent__sectionD__right {
+  width: 50%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  height: 15rem;
+}
+
+.dashboardContainer__mainContent__sectionD__left h4,
+.dashboardContainer__mainContent__sectionD__right h4 {
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.50);
+  font-size: 1rem;
+}
+
+.dashboardContainer__mainContent__sectionD__left section aside,
+.dashboardContainer__mainContent__sectionD__right section aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.dashboardContainer__mainContent__sectionD__left section aside aside img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -1rem;
+}
+
+.dashboardContainer__mainContent__sectionD__left section aside aside p,
+.dashboardContainer__mainContent__sectionD__right section aside div p {
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.dashboardContainer__mainContent__sectionD__left section aside aside div h5,
+.dashboardContainer__mainContent__sectionD__right section aside div h5 {
+  font-size: 1rem;
+}
+
+.dashboardContainer__mainContent__sectionD__left section aside .aside,
+.dashboardContainer__mainContent__sectionD__right section aside .aside {
+  display: flex;
+  gap: 8%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboardContainer__mainContent__sectionD__left section aside .aside img,
+.dashboardContainer__mainContent__sectionD__right section aside .aside img {
+  width: .7rem;
+  height: .7rem;
+  margin: -0.2rem 0 0 .2rem ;
+  font-size: 1rem;
+}
