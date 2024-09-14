@@ -7,7 +7,7 @@
 
 /* sidebar styling */
 .dashboardContainer__sidebar {
-  flex-basis: 3%; /* Takes up 5% of the container's width */
+  flex-basis: 3%; 
   background-color: rgb(255, 255, 255);
   padding: 1rem;
   min-height: 100%;
@@ -220,8 +220,8 @@
 }
 
 .dashboardContainer__mainContent__sectionB__right__bottom .progress-container {
-  width: 0.8rem; /* You can adjust the width of the bar */
-  height: 200px; /* Height of the progress bars */
+  width: 0.8rem; 
+  height: 200px; 
   background-color: #f2f7ff;
   border-radius: 25px;
   position: relative;
