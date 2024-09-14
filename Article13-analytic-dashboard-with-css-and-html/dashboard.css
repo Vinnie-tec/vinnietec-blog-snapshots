@@ -2,14 +2,15 @@
 
 .dashboardContainer {
   display: flex;
+  min-height: 100vh;
 }
 
 /* sidebar styling */
 .dashboardContainer__sidebar {
-  flex-basis: 2%; /* Takes up 5% of the container's width */
+  flex-basis: 3%; /* Takes up 5% of the container's width */
   background-color: rgb(255, 255, 255);
   padding: 1rem;
-  height: 100%;
+  min-height: 100%;
 }
 
 .dashboardContainer__sidebar h2 {
@@ -21,7 +22,6 @@
 
 .dashboardContainer__sidebar li {
   margin-bottom: 1rem;
-  color: rgb(0, 0, 0);
   padding: 0.5rem 3rem 0.5rem 1rem;
   border-radius: 0.5rem;
 }
@@ -38,10 +38,13 @@
   display: flex;
   align-items: center;
   gap: 10%;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .dashboardContainer__sidebar h3 {
   padding-left: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* MAIN CONTENT STYLING */
@@ -61,6 +64,7 @@
 .dashboardContainer__mainContent__header button {
   display: flex;
   align-items: center;
+  color: #4d4d4d;
 }
 
 /* First Section: Dropdown Filters  */
@@ -124,9 +128,8 @@
 .dashboardContainer__mainContent__sectionB__left__bottom div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #fff;
-  padding: 1rem 1rem 3rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   width: 100%;
   font-size: 0.9rem;
@@ -138,6 +141,12 @@
   white-space: nowrap;
 }
 
+.dashboardContainer__mainContent__sectionB__left__top div strong,
+.dashboardContainer__mainContent__sectionB__left__bottom div strong {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
 .dashboardContainer__mainContent__sectionB__left__bottom {
   margin-top: 1.5rem;
 }
@@ -146,15 +155,14 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  margin-top: 1rem;
 }
 
 .dashboardContainer__mainContent__sectionB__left__bottom div img {
   width: 8rem;
 }
 
-.dashboardContainer__mainContent__sectionB__left__bottom div img:last-child {
-  margin-top: -1.2rem;
+.dashboardContainer__mainContent__sectionB__left__bottom div img:first-child {
+  margin-bottom: -1.2rem;
 }
 
 .dashboardContainer__mainContent__sectionB__right {
@@ -270,8 +278,8 @@
 
 .dashboardContainer__mainContent__sectionC__left__content img,
 .dashboardContainer__mainContent__sectionC__right__content img {
-width: 3rem;
-height: 2rem;
+  width: 3rem;
+  height: 2rem;
 }
 
 .dashboardContainer__mainContent__sectionC__left__content aside h4,
@@ -294,7 +302,7 @@ height: 2rem;
 
 .dashboardContainer__mainContent__sectionC__left__content aside div h5 span,
 .dashboardContainer__mainContent__sectionC__right__content aside div h5 span {
- color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .dashboardContainer__mainContent__sectionC__left .progress-container,
@@ -339,7 +347,7 @@ height: 2rem;
 .dashboardContainer__mainContent__sectionD__left h4,
 .dashboardContainer__mainContent__sectionD__right h4 {
   margin-bottom: 2rem;
-  color: rgba(0, 0, 0, 0.50);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
 }
 
@@ -360,7 +368,7 @@ height: 2rem;
 .dashboardContainer__mainContent__sectionD__left section aside aside p,
 .dashboardContainer__mainContent__sectionD__right section aside div p {
   white-space: nowrap;
-  color: rgba(0, 0, 0, 0.50);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .dashboardContainer__mainContent__sectionD__left section aside aside div h5,
@@ -378,8 +386,8 @@ height: 2rem;
 
 .dashboardContainer__mainContent__sectionD__left section aside .aside img,
 .dashboardContainer__mainContent__sectionD__right section aside .aside img {
-  width: .7rem;
-  height: .7rem;
-  margin: -0.2rem 0 0 .2rem ;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin: -0.2rem 0 0 0.2rem;
   font-size: 1rem;
 }
